@@ -1,0 +1,46 @@
+10:25:50.365 [main] INFO  petstore.testcases.Usertests - ********** Creating User **********
+10:25:56.227 [main] INFO  petstore.testcases.Usertests - ********** User Created **********
+10:25:56.250 [main] INFO  petstore.testcases.Usertests - ********** Reading User Info **********
+10:25:57.722 [main] INFO  petstore.testcases.Usertests - ********** Updating User Info **********
+10:26:00.560 [main] INFO  petstore.testcases.Usertests - ********** User Info Updated **********
+10:26:00.567 [main] INFO  petstore.testcases.Usertests - ********** Deleting User **********
+10:51:18.731 [main] INFO  petstore.testcases.Usertests2 - ********** Creating User **********
+10:51:24.536 [main] INFO  petstore.testcases.Usertests2 - ********** User Created **********
+10:51:24.565 [main] INFO  petstore.testcases.Usertests2 - ********** Reading User Info **********
+10:51:26.217 [main] INFO  petstore.testcases.Usertests2 - ********** Updating User Info **********
+10:51:26.234 [main] INFO  petstore.testcases.Usertests2 - ********** Deleting User **********
+10:53:04.920 [main] INFO  petstore.testcases.Usertests2 - ********** Creating User **********
+10:53:10.625 [main] INFO  petstore.testcases.Usertests2 - ********** User Created **********
+10:53:10.645 [main] INFO  petstore.testcases.Usertests2 - ********** Reading User Info **********
+10:53:12.304 [main] INFO  petstore.testcases.Usertests2 - ********** Updating User Info **********
+10:53:12.323 [main] INFO  petstore.testcases.Usertests2 - ********** Deleting User **********
+10:53:13.907 [main] INFO  petstore.testcases.Usertests2 - ********** User Deleted **********
+10:53:28.120 [main] INFO  petstore.testcases.Usertests2 - ********** Creating User **********
+10:53:33.665 [main] INFO  petstore.testcases.Usertests2 - ********** User Created **********
+10:53:33.677 [main] INFO  petstore.testcases.Usertests2 - ********** Reading User Info **********
+10:53:35.356 [main] INFO  petstore.testcases.Usertests2 - ********** User Info Displayed **********
+10:53:35.369 [main] INFO  petstore.testcases.Usertests2 - ********** Updating User Info **********
+10:54:33.038 [main] INFO  petstore.testcases.Usertests2 - ********** Creating User **********
+10:54:38.569 [main] INFO  petstore.testcases.Usertests2 - ********** User Created **********
+10:54:38.589 [main] INFO  petstore.testcases.Usertests2 - ********** Reading User Info **********
+11:07:27.387 [main] INFO  petstore.testcases.Usertests2 - ********** Creating User **********
+11:07:33.142 [main] INFO  petstore.testcases.Usertests2 - ********** User Created **********
+11:07:33.157 [main] INFO  petstore.testcases.Usertests2 - ********** Reading User Info **********
+11:07:34.713 [main] INFO  petstore.testcases.Usertests2 - ********** User Info Displayed **********
+11:07:34.717 [main] INFO  petstore.testcases.Usertests2 - ********** Updating User Info **********
+11:09:17.049 [main] INFO  petstore.testcases.Usertests2 - ********** Creating User **********
+11:09:22.698 [main] INFO  petstore.testcases.Usertests2 - ********** User Created **********
+11:09:22.715 [main] INFO  petstore.testcases.Usertests2 - ********** Reading User Info **********
+11:09:24.295 [main] INFO  petstore.testcases.Usertests2 - ********** Updating User Info **********
+11:09:27.319 [main] INFO  petstore.testcases.Usertests2 - ********** User Info Updated **********
+11:26:26.561 [main] INFO  petstore.testcases.Usertests2 - ********** Creating User **********
+11:26:32.165 [main] INFO  petstore.testcases.Usertests2 - ********** User Created **********
+11:26:32.181 [main] INFO  petstore.testcases.Usertests2 - ********** Reading User Info **********
+11:26:33.746 [main] INFO  petstore.testcases.Usertests2 - ********** Updating User Info **********
+11:26:36.816 [main] INFO  petstore.testcases.Usertests2 - ********** User Info Updated **********
+11:28:58.583 [main] INFO  petstore.testcases.Usertests2 - ********** Creating User **********
+11:29:04.340 [main] INFO  petstore.testcases.Usertests2 - ********** User Created **********
+11:29:04.356 [main] INFO  petstore.testcases.Usertests2 - ********** Reading User Info **********
+11:29:05.634 [main] INFO  petstore.testcases.Usertests2 - ********** User Info Displayed **********
+11:29:05.646 [main] INFO  petstore.testcases.Usertests2 - ********** Updating User Info **********
+11:29:08.676 [main] INFO  petstore.testcases.Usertests2 - ********** User Info Updated **********
