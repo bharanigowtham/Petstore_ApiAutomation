@@ -8,7 +8,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import petstore.payload.User;
 
-public class Userendpoints2 {
+public class Userendpoints_UsingRoutesProp {
 	
 	public static ResourceBundle getUrl() {
 		

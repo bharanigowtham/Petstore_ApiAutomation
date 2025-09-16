@@ -11,7 +11,6 @@ public class User {
 	String phone;
 	int userStatus=0;
 	
-	
 	public int getId() {
 		return id;
 	}

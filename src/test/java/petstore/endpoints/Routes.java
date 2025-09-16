@@ -9,5 +9,10 @@ public class Routes {
 	public static String get_url = base_Url + "/user/{username}";
 	public static String put_url = base_Url + "/user/{username}";
 	public static String delete_url = base_Url + "/user/{username}";
-
+	
+	//Store Module
+	public static String post_Order_url = base_Url + "/store/order";
+	public static String get_Order_Url = base_Url + "/store/order/{orderId}";
+	public static String delete_Order_Url = base_Url + "/store/order/{orderId}";
+	
 }

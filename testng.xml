@@ -9,7 +9,7 @@
   <test thread-count="5" name="Test">
     <classes>
      <!-- <class name="petstore.testcases.UserDataDriventests"/> -->
-      <class name="petstore.testcases.Usertests2"/>
+      <class name="petstore.testcases.Usertests_usingRoutesProp"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

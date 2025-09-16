@@ -7,10 +7,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
 import io.restassured.response.Response;
-import petstore.endpoints.Userendpoints2;
+import petstore.endpoints.Userendpoints_UsingRoutesProp;
 import petstore.payload.User;
 
-public class Usertests2 {
+public class Usertests_usingRoutesProp {
 	
 	Faker faker;
 	User userpayload;
@@ -38,7 +38,7 @@ public class Usertests2 {
 		
 		logger.info("********** Creating User **********");
 		
-		Response response = Userendpoints2.createUser(userpayload);
+		Response response = Userendpoints_UsingRoutesProp.createUser(userpayload);
 		response.then().log().all();
 		
 		System.out.println("Username is: " + this.userpayload.getUsername());
@@ -54,7 +54,7 @@ public class Usertests2 {
 		
 		logger.info("********** Reading User Info **********");
 			
-		 Response response = Userendpoints2.getUser(this.userpayload.getUsername());
+		 Response response = Userendpoints_UsingRoutesProp.getUser(this.userpayload.getUsername());
 		 response.then().log().all();
 		 
 		 System.out.println("Username is: " + this.userpayload.getUsername());
@@ -77,11 +77,11 @@ public class Usertests2 {
 		userpayload.setLastName(faker.name().lastName());
 		userpayload.setEmail(faker.internet().safeEmailAddress());
 		
-		 Response response = Userendpoints2.updateUser(this.userpayload.getUsername(), userpayload);
+		 Response response = Userendpoints_UsingRoutesProp.updateUser(this.userpayload.getUsername(), userpayload);
 		 response.then().log().body();
 	 
 		 //checking data after update
-		 Response responseafterupdate = Userendpoints2.getUser(this.userpayload.getUsername());
+		 Response responseafterupdate = Userendpoints_UsingRoutesProp.getUser(this.userpayload.getUsername());
 		 responseafterupdate.then().log().body();
 		 Assert.assertEquals(responseafterupdate.getStatusCode(), 200);
 		 
@@ -100,7 +100,7 @@ public class Usertests2 {
 		
 		 logger.info("********** Deleting User **********");
 		
-		 Response response = Userendpoints2.deleteUser(this.userpayload.getUsername());
+		 Response response = Userendpoints_UsingRoutesProp.deleteUser(this.userpayload.getUsername());
 		 response.then().log().all();
 		 System.out.println("Username is: " + this.userpayload.getUsername());
 		 System.out.println(response.getStatusCode());
@@ -114,7 +114,7 @@ public class Usertests2 {
 		
 		logger.info("********** Reading User Info (Negative Test) **********");
 		
-		 Response response = Userendpoints2.getUser(this.userpayload.getUsername());
+		 Response response = Userendpoints_UsingRoutesProp.getUser(this.userpayload.getUsername());
 		 response.then().log().all();
 		 System.out.println(response.getStatusCode());
 		 Assert.assertEquals(response.getStatusCode(), 200);
