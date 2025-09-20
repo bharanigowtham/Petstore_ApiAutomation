@@ -8,8 +8,13 @@
 
   <test thread-count="5" name="Test">
     <classes>
-     <!-- <class name="petstore.testcases.UserDataDriventests"/> -->
-      <class name="petstore.testcases.Usertests_usingRoutesProp"/>
+     	 <class name="petstore.testcases.UserDataDriventests"/> 
+     	 <class name="petstore.testcases.StoreDataDriventests"/> 
+     	 <class name="petstore.testcases.Usertests"/> 
+     	 <class name="petstore.testcases.Storetests"/> 
+		 <class name="petstore.testcases.AuthenticationTests"/> 
+
+     <!--  <class name="petstore.testcases.Usertests_usingRoutesProp"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -44,10 +44,11 @@ public class Store {
 		this.status = status;
 	}
 	
-	public boolean getComplete() {
+	public Boolean getComplete() {
 		return complete;
 	}
-	public void setComplete(boolean complete) {
+	public void setComplete (boolean complete) {
 		this.complete = complete;
 	}
+
 }

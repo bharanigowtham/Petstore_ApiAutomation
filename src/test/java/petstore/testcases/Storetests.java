@@ -1,10 +1,11 @@
 package petstore.testcases;
 
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.notNullValue;
 import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.hamcrest.Matcher;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -50,17 +51,23 @@ public class Storetests {
 		
 		
 		logger.info("********** Order creation validation start **********");
+		//below validations with testng assertions.
 		Assert.assertEquals(response.getStatusCode(), 200);
+		
+		//below validations with hamcrest matchers...
 		response.then().assertThat().body("id", equalTo(this.storepayload.getId()));
 		response.then().assertThat().body("petId", equalTo(this.storepayload.getPetId()));
 		response.then().assertThat().body("quantity", equalTo(this.storepayload.getQuantity()));
 		response.then().assertThat().body("status", equalTo(this.storepayload.getStatus()));
 		response.then().assertThat().body("complete", equalTo(this.storepayload.getComplete()));
-		
 		response.then().and().time(lessThan(2000L), TimeUnit.SECONDS);
+		response.then().header("Date", notNullValue());
 		
+		//Schema Validation using Hamcrest matchers..
 		response.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("Schemas/Store/StoreSchema.json"));
 		logger.info("********** Order created validation completed**********");
+		
+		
 		Thread.sleep(2000);
 	}
 
@@ -75,11 +82,17 @@ public class Storetests {
 		
 		logger.info("********** Order info validation start **********");
 		Assert.assertEquals(response.getStatusCode(), 200);
+		response.then().statusLine("HTTP/1.1 200 OK");
+		response.then().body("shipDate", containsString("2025-09"));
 		response.then().assertThat().body("id", equalTo(this.storepayload.getId()));
 		response.then().assertThat().body("petId", equalTo(this.storepayload.getPetId()));
 		response.then().assertThat().body("quantity", equalTo(this.storepayload.getQuantity()));
-		
-		
+		response.then().header("Content-Type","application/json");
+		response.then().headers("Transfer-Encoding", "chunked");
+		response.then().headers("Connection", "keep-alive");
+		response.then().header("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");
+		response.then().header("Access-Control-Allow-Headers", "Content-Type, api_key, Authorization");
+
 		logger.info("********** Order info validation completed **********");
 	}
 	

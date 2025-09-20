@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="petstore.testcases.Storetests">
+      <class name="petstore.testcases.StoreDataDriventests">
         <methods>
-          <include name="setUp"/>
-          <include name="testGetStoreOrder"/>
+          <include name="testGetStoreOrderByID_DD_Negative" invocation-numbers="2"/>
         </methods>
-      </class> <!-- petstore.testcases.Storetests -->
+      </class> <!-- petstore.testcases.StoreDataDriventests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

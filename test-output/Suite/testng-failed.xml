@@ -6,14 +6,17 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="petstore.testcases.Usertests2">
+      <class name="petstore.testcases.StoreDataDriventests">
+        <methods>
+          <include name="testGetStoreOrderByID_DD_Negative" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- petstore.testcases.StoreDataDriventests -->
+      <class name="petstore.testcases.Storetests">
         <methods>
           <include name="setUp"/>
-          <include name="testGetUserByName"/>
-          <include name="testDeleteUserByName"/>
-          <include name="testUpdateUserbyName"/>
+          <include name="testGetStoreOrder"/>
         </methods>
-      </class> <!-- petstore.testcases.Usertests2 -->
+      </class> <!-- petstore.testcases.Storetests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

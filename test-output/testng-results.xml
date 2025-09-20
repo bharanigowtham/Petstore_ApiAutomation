@@ -1,34 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="21" passed="18" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-16T18:07:54 MYT" name="Default suite" finished-at="2025-09-16T18:08:05 MYT" duration-ms="11022">
+  <suite started-at="2025-09-20T11:06:47 MYT" name="Suite" finished-at="2025-09-20T11:07:30 MYT" duration-ms="42086">
     <groups>
     </groups>
-    <test started-at="2025-09-16T18:07:54 MYT" name="Default test" finished-at="2025-09-16T18:08:05 MYT" duration-ms="11022">
-      <class name="petstore.testcases.Storetests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:petstore.testcases.Storetests@9d5509a]" started-at="2025-09-16T18:07:54 MYT" name="setUp" finished-at="2025-09-16T18:07:55 MYT" duration-ms="775" status="PASS">
+    <test started-at="2025-09-20T11:06:47 MYT" name="Test" finished-at="2025-09-20T11:07:30 MYT" duration-ms="42086">
+      <class name="petstore.testcases.AuthenticationTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:petstore.testcases.AuthenticationTests@57ac5227]" started-at="2025-09-20T11:07:27 MYT" name="setUp" finished-at="2025-09-20T11:07:27 MYT" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testPostStoreOrder()[pri:1, instance:petstore.testcases.Storetests@9d5509a]" started-at="2025-09-16T18:07:55 MYT" name="testPostStoreOrder" finished-at="2025-09-16T18:08:02 MYT" duration-ms="6881" status="PASS">
+        <test-method signature="testAuthentication()[pri:1, instance:petstore.testcases.AuthenticationTests@57ac5227]" started-at="2025-09-20T11:07:27 MYT" name="testAuthentication" finished-at="2025-09-20T11:07:29 MYT" duration-ms="2034" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPostStoreOrder -->
-        <test-method signature="testGetStoreOrder()[pri:2, instance:petstore.testcases.Storetests@9d5509a]" started-at="2025-09-16T18:08:02 MYT" name="testGetStoreOrder" finished-at="2025-09-16T18:08:04 MYT" duration-ms="1673" status="FAIL">
+        </test-method> <!-- testAuthentication -->
+        <test-method signature="testApiKey()[pri:2, instance:petstore.testcases.AuthenticationTests@57ac5227]" started-at="2025-09-20T11:07:29 MYT" name="testApiKey" finished-at="2025-09-20T11:07:30 MYT" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApiKey -->
+      </class> <!-- petstore.testcases.AuthenticationTests -->
+      <class name="petstore.testcases.Usertests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:petstore.testcases.Usertests@33aeca0b]" started-at="2025-09-20T11:07:16 MYT" name="setUp" finished-at="2025-09-20T11:07:16 MYT" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCreateUser()[pri:1, instance:petstore.testcases.Usertests@33aeca0b]" started-at="2025-09-20T11:07:16 MYT" name="testCreateUser" finished-at="2025-09-20T11:07:20 MYT" duration-ms="3619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUser -->
+      </class> <!-- petstore.testcases.Usertests -->
+      <class name="petstore.testcases.StoreDataDriventests">
+        <test-method signature="testPostStoreOrder_DD(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:petstore.testcases.StoreDataDriventests@47a5b70d]" started-at="2025-09-20T11:07:01 MYT" name="testPostStoreOrder_DD" data-provider="StoreData" finished-at="2025-09-20T11:07:03 MYT" duration-ms="1612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[22]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Random]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[placed]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostStoreOrder_DD -->
+        <test-method signature="testPostStoreOrder_DD(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:petstore.testcases.StoreDataDriventests@47a5b70d]" started-at="2025-09-20T11:07:03 MYT" name="testPostStoreOrder_DD" data-provider="StoreData" finished-at="2025-09-20T11:07:04 MYT" duration-ms="1633" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[24]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Random]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[placed]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostStoreOrder_DD -->
+        <test-method signature="testPostStoreOrder_DD(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:petstore.testcases.StoreDataDriventests@47a5b70d]" started-at="2025-09-20T11:07:04 MYT" name="testPostStoreOrder_DD" data-provider="StoreData" finished-at="2025-09-20T11:07:06 MYT" duration-ms="1525" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[26]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Random]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[placed]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostStoreOrder_DD -->
+        <test-method signature="testDeleteStoreOrderByID_DD(java.lang.String)[pri:2, instance:petstore.testcases.StoreDataDriventests@47a5b70d]" started-at="2025-09-20T11:07:06 MYT" name="testDeleteStoreOrderByID_DD" data-provider="id" finished-at="2025-09-20T11:07:07 MYT" duration-ms="1565" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteStoreOrderByID_DD -->
+        <test-method signature="testDeleteStoreOrderByID_DD(java.lang.String)[pri:2, instance:petstore.testcases.StoreDataDriventests@47a5b70d]" started-at="2025-09-20T11:07:07 MYT" name="testDeleteStoreOrderByID_DD" data-provider="id" finished-at="2025-09-20T11:07:09 MYT" duration-ms="1535" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteStoreOrderByID_DD -->
+        <test-method signature="testDeleteStoreOrderByID_DD(java.lang.String)[pri:2, instance:petstore.testcases.StoreDataDriventests@47a5b70d]" started-at="2025-09-20T11:07:09 MYT" name="testDeleteStoreOrderByID_DD" data-provider="id" finished-at="2025-09-20T11:07:10 MYT" duration-ms="1534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteStoreOrderByID_DD -->
+        <test-method signature="testGetStoreOrderByID_DD_Negative(java.lang.String)[pri:3, instance:petstore.testcases.StoreDataDriventests@47a5b70d]" started-at="2025-09-20T11:07:11 MYT" name="testGetStoreOrderByID_DD_Negative" data-provider="id" finished-at="2025-09-20T11:07:13 MYT" duration-ms="2427" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStoreOrderByID_DD_Negative -->
+        <test-method signature="testGetStoreOrderByID_DD_Negative(java.lang.String)[pri:3, instance:petstore.testcases.StoreDataDriventests@47a5b70d]" started-at="2025-09-20T11:07:13 MYT" name="testGetStoreOrderByID_DD_Negative" data-provider="id" finished-at="2025-09-20T11:07:15 MYT" duration-ms="1643" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
-JSON path petId doesn't match.
-Expected: <17>
-  Actual: <0>
+JSON path message doesn't match.
+Expected: Order not found
+  Actual: null
 ]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
-JSON path petId doesn't match.
-Expected: <17>
-  Actual: <0>
+JSON path message doesn't match.
+Expected: Order not found
+  Actual: null
 
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
@@ -52,7 +227,296 @@ at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationI
 at io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
 at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-at petstore.testcases.Storetests.testGetStoreOrder(Storetests.java:79)
+at petstore.testcases.StoreDataDriventests.testGetStoreOrderByID_DD_Negative(StoreDataDriventests.java:65)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStoreOrderByID_DD_Negative -->
+        <test-method signature="testGetStoreOrderByID_DD_Negative(java.lang.String)[pri:3, instance:petstore.testcases.StoreDataDriventests@47a5b70d]" started-at="2025-09-20T11:07:15 MYT" name="testGetStoreOrderByID_DD_Negative" data-provider="id" finished-at="2025-09-20T11:07:16 MYT" duration-ms="1598" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+JSON path message doesn't match.
+Expected: Order not found
+  Actual: null
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path message doesn't match.
+Expected: Order not found
+  Actual: null
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+at io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+at petstore.testcases.StoreDataDriventests.testGetStoreOrderByID_DD_Negative(StoreDataDriventests.java:65)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStoreOrderByID_DD_Negative -->
+      </class> <!-- petstore.testcases.StoreDataDriventests -->
+      <class name="petstore.testcases.UserDataDriventests">
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:petstore.testcases.UserDataDriventests@6025e1b6]" started-at="2025-09-20T11:06:49 MYT" name="testPostUser" data-provider="Data" finished-at="2025-09-20T11:06:53 MYT" duration-ms="3552" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1010]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testuser1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Canedy]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[a@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[test@1]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1234567897]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:petstore.testcases.UserDataDriventests@6025e1b6]" started-at="2025-09-20T11:06:53 MYT" name="testPostUser" data-provider="Data" finished-at="2025-09-20T11:06:54 MYT" duration-ms="1522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1020]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testuser2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kim]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kom]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[b@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[test@2]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1234567897]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:petstore.testcases.UserDataDriventests@6025e1b6]" started-at="2025-09-20T11:06:54 MYT" name="testPostUser" data-provider="Data" finished-at="2025-09-20T11:06:56 MYT" duration-ms="1632" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1030]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testuser3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Steve]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[c@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[test@3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1234567897]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:petstore.testcases.UserDataDriventests@6025e1b6]" started-at="2025-09-20T11:06:56 MYT" name="testDeleteUserByName" data-provider="UserNames" finished-at="2025-09-20T11:06:57 MYT" duration-ms="1591" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUserByName -->
+        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:petstore.testcases.UserDataDriventests@6025e1b6]" started-at="2025-09-20T11:06:57 MYT" name="testDeleteUserByName" data-provider="UserNames" finished-at="2025-09-20T11:06:59 MYT" duration-ms="1530" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUserByName -->
+        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:petstore.testcases.UserDataDriventests@6025e1b6]" started-at="2025-09-20T11:06:59 MYT" name="testDeleteUserByName" data-provider="UserNames" finished-at="2025-09-20T11:07:01 MYT" duration-ms="1533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUserByName -->
+      </class> <!-- petstore.testcases.UserDataDriventests -->
+      <class name="petstore.testcases.Storetests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:petstore.testcases.Storetests@43aaf813]" started-at="2025-09-20T11:07:20 MYT" name="setUp" finished-at="2025-09-20T11:07:20 MYT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPostStoreOrder()[pri:1, instance:petstore.testcases.Storetests@43aaf813]" started-at="2025-09-20T11:07:20 MYT" name="testPostStoreOrder" finished-at="2025-09-20T11:07:24 MYT" duration-ms="4012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostStoreOrder -->
+        <test-method signature="testGetStoreOrder()[pri:2, instance:petstore.testcases.Storetests@43aaf813]" started-at="2025-09-20T11:07:24 MYT" name="testGetStoreOrder" finished-at="2025-09-20T11:07:26 MYT" duration-ms="1638" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at org.testng.Assert.assertEquals(Assert.java:1274)
+at petstore.testcases.Storetests.testGetStoreOrder(Storetests.java:84)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -85,11 +549,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetStoreOrder -->
-        <test-method signature="testDeleteStoreOrder()[pri:3, instance:petstore.testcases.Storetests@9d5509a]" started-at="2025-09-16T18:08:04 MYT" name="testDeleteStoreOrder" finished-at="2025-09-16T18:08:05 MYT" duration-ms="1619" status="PASS">
+        <test-method signature="testDeleteStoreOrder()[pri:3, instance:petstore.testcases.Storetests@43aaf813]" started-at="2025-09-20T11:07:26 MYT" name="testDeleteStoreOrder" finished-at="2025-09-20T11:07:27 MYT" duration-ms="1577" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteStoreOrder -->
       </class> <!-- petstore.testcases.Storetests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
