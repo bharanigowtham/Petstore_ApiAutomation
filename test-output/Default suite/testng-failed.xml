@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="petstore.testcases.StoreDataDriventests">
+      <class name="petstore.testcases.Wiremocktests">
         <methods>
-          <include name="testGetStoreOrderByID_DD_Negative" invocation-numbers="2"/>
+          <include name="testPostuseruisngMockserver"/>
+          <include name="MockServer_setup"/>
+          <include name="MockServer_Teardown"/>
         </methods>
-      </class> <!-- petstore.testcases.StoreDataDriventests -->
+      </class> <!-- petstore.testcases.Wiremocktests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

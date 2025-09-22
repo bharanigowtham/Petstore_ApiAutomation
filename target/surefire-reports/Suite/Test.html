@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 15 11:28:57 GMT+08:00 2025</td>
+<td>Started on:</td><td>Sat Sep 20 11:25:58 GMT+08:00 2025</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11174 ms)</td>
+<tr><td>Total time:</td><td>45 seconds (45138 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,156 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='petstore.testcases.UserDataDriventests.testDeleteUserByName()'><b>testDeleteUserByName</b><br>Test class: petstore.testcases.UserDataDriventests<br>Parameters: testuser2</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [404]
+	at petstore.testcases.UserDataDriventests.testDeleteUserByName(UserDataDriventests.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1151942538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1151942538'><pre>java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at org.testng.Assert.assertEquals(Assert.java:1274)
+	at petstore.testcases.UserDataDriventests.testDeleteUserByName(UserDataDriventests.java:39)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>1</td>
+<td>petstore.testcases.UserDataDriventests@359f7cdf</td></tr>
+<tr>
+<td title='petstore.testcases.Storetests.testDeleteStoreOrder()'><b>testDeleteStoreOrder</b><br>Test class: petstore.testcases.Storetests</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [404]
+	at petstore.testcases.Storetests.testDeleteStoreOrder(Storetests.java:108)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1531406640", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1531406640'><pre>java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at org.testng.Assert.assertEquals(Assert.java:1274)
+	at petstore.testcases.Storetests.testDeleteStoreOrder(Storetests.java:108)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>1</td>
+<td>petstore.testcases.Storetests@70ab2d48</td></tr>
+<tr>
+<td title='petstore.testcases.Storetests.testGetStoreOrder()'><b>testGetStoreOrder</b><br>Test class: petstore.testcases.Storetests</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [404]
+	at petstore.testcases.Storetests.testGetStoreOrder(Storetests.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1611841256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1611841256'><pre>java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at org.testng.Assert.assertEquals(Assert.java:1274)
+	at petstore.testcases.Storetests.testGetStoreOrder(Storetests.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>1</td>
+<td>petstore.testcases.Storetests@70ab2d48</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,20 +226,95 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='petstore.testcases.Usertests2.testCreateUser()'><b>testCreateUser</b><br>Test class: petstore.testcases.Usertests2</td>
-<td></td>
-<td>5</td>
-<td>petstore.testcases.Usertests2@72d1ad2e</td></tr>
-<tr>
-<td title='petstore.testcases.Usertests2.testGetUserByName()'><b>testGetUserByName</b><br>Test class: petstore.testcases.Usertests2</td>
+<td title='petstore.testcases.StoreDataDriventests.testGetStoreOrderByID_DD_Negative()'><b>testGetStoreOrderByID_DD_Negative</b><br>Test class: petstore.testcases.StoreDataDriventests<br>Parameters: 6</td>
 <td></td>
 <td>1</td>
-<td>petstore.testcases.Usertests2@72d1ad2e</td></tr>
+<td>petstore.testcases.StoreDataDriventests@39a8312f</td></tr>
 <tr>
-<td title='petstore.testcases.Usertests2.testUpdateUserbyName()'><b>testUpdateUserbyName</b><br>Test class: petstore.testcases.Usertests2</td>
+<td title='petstore.testcases.UserDataDriventests.testPostUser()'><b>testPostUser</b><br>Test class: petstore.testcases.UserDataDriventests<br>Parameters: 1030, testuser3, Smith, Steve, c@gmail.com, test@3, 1234567897</td>
+<td></td>
+<td>2</td>
+<td>petstore.testcases.UserDataDriventests@359f7cdf</td></tr>
+<tr>
+<td title='petstore.testcases.Storetests.testPostStoreOrder()'><b>testPostStoreOrder</b><br>Test class: petstore.testcases.Storetests</td>
 <td></td>
 <td>3</td>
-<td>petstore.testcases.Usertests2@72d1ad2e</td></tr>
+<td>petstore.testcases.Storetests@70ab2d48</td></tr>
+<tr>
+<td title='petstore.testcases.StoreDataDriventests.testGetStoreOrderByID_DD_Negative()'><b>testGetStoreOrderByID_DD_Negative</b><br>Test class: petstore.testcases.StoreDataDriventests<br>Parameters: 2</td>
+<td></td>
+<td>2</td>
+<td>petstore.testcases.StoreDataDriventests@39a8312f</td></tr>
+<tr>
+<td title='petstore.testcases.StoreDataDriventests.testDeleteStoreOrderByID_DD()'><b>testDeleteStoreOrderByID_DD</b><br>Test class: petstore.testcases.StoreDataDriventests<br>Parameters: 6</td>
+<td></td>
+<td>1</td>
+<td>petstore.testcases.StoreDataDriventests@39a8312f</td></tr>
+<tr>
+<td title='petstore.testcases.Usertests.testCreateUser()'><b>testCreateUser</b><br>Test class: petstore.testcases.Usertests</td>
+<td></td>
+<td>3</td>
+<td>petstore.testcases.Usertests@ebb6851</td></tr>
+<tr>
+<td title='petstore.testcases.StoreDataDriventests.testPostStoreOrder_DD()'><b>testPostStoreOrder_DD</b><br>Test class: petstore.testcases.StoreDataDriventests<br>Parameters: 2, 12, 22, Random, placed, true</td>
+<td></td>
+<td>1</td>
+<td>petstore.testcases.StoreDataDriventests@39a8312f</td></tr>
+<tr>
+<td title='petstore.testcases.UserDataDriventests.testPostUser()'><b>testPostUser</b><br>Test class: petstore.testcases.UserDataDriventests<br>Parameters: 1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897</td>
+<td></td>
+<td>4</td>
+<td>petstore.testcases.UserDataDriventests@359f7cdf</td></tr>
+<tr>
+<td title='petstore.testcases.UserDataDriventests.testPostUser()'><b>testPostUser</b><br>Test class: petstore.testcases.UserDataDriventests<br>Parameters: 1020, testuser2, Kim, Kom, b@gmail.com, test@2, 1234567897</td>
+<td></td>
+<td>1</td>
+<td>petstore.testcases.UserDataDriventests@359f7cdf</td></tr>
+<tr>
+<td title='petstore.testcases.StoreDataDriventests.testDeleteStoreOrderByID_DD()'><b>testDeleteStoreOrderByID_DD</b><br>Test class: petstore.testcases.StoreDataDriventests<br>Parameters: 4</td>
+<td></td>
+<td>1</td>
+<td>petstore.testcases.StoreDataDriventests@39a8312f</td></tr>
+<tr>
+<td title='petstore.testcases.StoreDataDriventests.testDeleteStoreOrderByID_DD()'><b>testDeleteStoreOrderByID_DD</b><br>Test class: petstore.testcases.StoreDataDriventests<br>Parameters: 2</td>
+<td></td>
+<td>1</td>
+<td>petstore.testcases.StoreDataDriventests@39a8312f</td></tr>
+<tr>
+<td title='petstore.testcases.UserDataDriventests.testDeleteUserByName()'><b>testDeleteUserByName</b><br>Test class: petstore.testcases.UserDataDriventests<br>Parameters: testuser3</td>
+<td></td>
+<td>3</td>
+<td>petstore.testcases.UserDataDriventests@359f7cdf</td></tr>
+<tr>
+<td title='petstore.testcases.AuthenticationTests.testAuthentication()'><b>testAuthentication</b><br>Test class: petstore.testcases.AuthenticationTests</td>
+<td></td>
+<td>1</td>
+<td>petstore.testcases.AuthenticationTests@5b068087</td></tr>
+<tr>
+<td title='petstore.testcases.AuthenticationTests.testApiKey()'><b>testApiKey</b><br>Test class: petstore.testcases.AuthenticationTests</td>
+<td></td>
+<td>0</td>
+<td>petstore.testcases.AuthenticationTests@5b068087</td></tr>
+<tr>
+<td title='petstore.testcases.UserDataDriventests.testDeleteUserByName()'><b>testDeleteUserByName</b><br>Test class: petstore.testcases.UserDataDriventests<br>Parameters: testuser1</td>
+<td></td>
+<td>1</td>
+<td>petstore.testcases.UserDataDriventests@359f7cdf</td></tr>
+<tr>
+<td title='petstore.testcases.StoreDataDriventests.testPostStoreOrder_DD()'><b>testPostStoreOrder_DD</b><br>Test class: petstore.testcases.StoreDataDriventests<br>Parameters: 6, 16, 26, Random, placed, true</td>
+<td></td>
+<td>1</td>
+<td>petstore.testcases.StoreDataDriventests@39a8312f</td></tr>
+<tr>
+<td title='petstore.testcases.StoreDataDriventests.testPostStoreOrder_DD()'><b>testPostStoreOrder_DD</b><br>Test class: petstore.testcases.StoreDataDriventests<br>Parameters: 4, 14, 24, Random, placed, true</td>
+<td></td>
+<td>1</td>
+<td>petstore.testcases.StoreDataDriventests@39a8312f</td></tr>
+<tr>
+<td title='petstore.testcases.StoreDataDriventests.testGetStoreOrderByID_DD_Negative()'><b>testGetStoreOrderByID_DD_Negative</b><br>Test class: petstore.testcases.StoreDataDriventests<br>Parameters: 4</td>
+<td></td>
+<td>1</td>
+<td>petstore.testcases.StoreDataDriventests@39a8312f</td></tr>
 </table><p>
 </body>
 </html>

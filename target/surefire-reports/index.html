@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">21 methods, 3 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.Storetests" class="method navigator-link" hash-for-method="testDeleteStoreOrder">testDeleteStoreOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.UserDataDriventests" class="method navigator-link" hash-for-method="testDeleteUserByName(testuser2)">testDeleteUserByName(testuser2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.Storetests" class="method navigator-link" hash-for-method="testGetStoreOrder">testGetStoreOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +127,92 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.Usertests2" class="method navigator-link" hash-for-method="testCreateUser">testCreateUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.AuthenticationTests" class="method navigator-link" hash-for-method="testApiKey">testApiKey</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.Usertests2" class="method navigator-link" hash-for-method="testGetUserByName">testGetUserByName</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.AuthenticationTests" class="method navigator-link" hash-for-method="testAuthentication">testAuthentication</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.Usertests2" class="method navigator-link" hash-for-method="testUpdateUserbyName">testUpdateUserbyName</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.Usertests" class="method navigator-link" hash-for-method="testCreateUser">testCreateUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.StoreDataDriventests" class="method navigator-link" hash-for-method="testDeleteStoreOrderByID_DD(6)">testDeleteStoreOrderByID_DD(6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.StoreDataDriventests" class="method navigator-link" hash-for-method="testDeleteStoreOrderByID_DD(4)">testDeleteStoreOrderByID_DD(4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.StoreDataDriventests" class="method navigator-link" hash-for-method="testDeleteStoreOrderByID_DD(2)">testDeleteStoreOrderByID_DD(2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.UserDataDriventests" class="method navigator-link" hash-for-method="testDeleteUserByName(testuser3)">testDeleteUserByName(testuser3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.UserDataDriventests" class="method navigator-link" hash-for-method="testDeleteUserByName(testuser1)">testDeleteUserByName(testuser1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.StoreDataDriventests" class="method navigator-link" hash-for-method="testGetStoreOrderByID_DD_Negative(6)">testGetStoreOrderByID_DD_Negative(6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.StoreDataDriventests" class="method navigator-link" hash-for-method="testGetStoreOrderByID_DD_Negative(2)">testGetStoreOrderByID_DD_Negative(2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.StoreDataDriventests" class="method navigator-link" hash-for-method="testGetStoreOrderByID_DD_Negative(4)">testGetStoreOrderByID_DD_Negative(4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.Storetests" class="method navigator-link" hash-for-method="testPostStoreOrder">testPostStoreOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.StoreDataDriventests" class="method navigator-link" hash-for-method="testPostStoreOrder_DD(2, 12, 22, Random, placed, true)">testPostStoreOrder_DD(2, 12, 22, Random, placed, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.StoreDataDriventests" class="method navigator-link" hash-for-method="testPostStoreOrder_DD(6, 16, 26, Random, placed, true)">testPostStoreOrder_DD(6, 16, 26, Random, placed, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.StoreDataDriventests" class="method navigator-link" hash-for-method="testPostStoreOrder_DD(4, 14, 24, Random, placed, true)">testPostStoreOrder_DD(4, 14, 24, Random, placed, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.UserDataDriventests" class="method navigator-link" hash-for-method="testPostUser(1030, testuser3, Smith, Steve, c@gmail.com, test@3, 1234567897)">testPostUser(1030, testuser3, Smith, Steve, c@gmail.com, test@3, 1234567897)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.UserDataDriventests" class="method navigator-link" hash-for-method="testPostUser(1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897)">testPostUser(1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="petstore.testcases.UserDataDriventests" class="method navigator-link" hash-for-method="testPostUser(1020, testuser2, Kim, Kom, b@gmail.com, test@2, 1234567897)">testPostUser(1020, testuser2, Kim, Kom, b@gmail.com, test@2, 1234567897)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -128,10 +227,165 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">petstore.testcases.UserDataDriventests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteUserByName(testuser2)">
+                  </a> <!-- testDeleteUserByName(testuser2) -->
+                  <span class="method-name">testDeleteUserByName</span>
+                  <span class="parameters">(testuser2)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
+	at petstore.testcases.UserDataDriventests.testDeleteUserByName(UserDataDriventests.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">petstore.testcases.Storetests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteStoreOrder">
+                  </a> <!-- testDeleteStoreOrder -->
+                  <span class="method-name">testDeleteStoreOrder</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
+	at petstore.testcases.Storetests.testDeleteStoreOrder(Storetests.java:108)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetStoreOrder">
+                  </a> <!-- testGetStoreOrder -->
+                  <span class="method-name">testGetStoreOrder</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
+	at petstore.testcases.Storetests.testGetStoreOrder(Storetests.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">petstore.testcases.Usertests2</span>
+              <span class="class-name">petstore.testcases.AuthenticationTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testApiKey">
+                  </a> <!-- testApiKey -->
+                  <span class="method-name">testApiKey</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAuthentication">
+                  </a> <!-- testAuthentication -->
+                  <span class="method-name">testAuthentication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">petstore.testcases.StoreDataDriventests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteStoreOrderByID_DD(6)">
+                  </a> <!-- testDeleteStoreOrderByID_DD(6) -->
+                  <span class="method-name">testDeleteStoreOrderByID_DD</span>
+                  <span class="parameters">(6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteStoreOrderByID_DD(4)">
+                  </a> <!-- testDeleteStoreOrderByID_DD(4) -->
+                  <span class="method-name">testDeleteStoreOrderByID_DD</span>
+                  <span class="parameters">(4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteStoreOrderByID_DD(2)">
+                  </a> <!-- testDeleteStoreOrderByID_DD(2) -->
+                  <span class="method-name">testDeleteStoreOrderByID_DD</span>
+                  <span class="parameters">(2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetStoreOrderByID_DD_Negative(6)">
+                  </a> <!-- testGetStoreOrderByID_DD_Negative(6) -->
+                  <span class="method-name">testGetStoreOrderByID_DD_Negative</span>
+                  <span class="parameters">(6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetStoreOrderByID_DD_Negative(2)">
+                  </a> <!-- testGetStoreOrderByID_DD_Negative(2) -->
+                  <span class="method-name">testGetStoreOrderByID_DD_Negative</span>
+                  <span class="parameters">(2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetStoreOrderByID_DD_Negative(4)">
+                  </a> <!-- testGetStoreOrderByID_DD_Negative(4) -->
+                  <span class="method-name">testGetStoreOrderByID_DD_Negative</span>
+                  <span class="parameters">(4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPostStoreOrder_DD(2, 12, 22, Random, placed, true)">
+                  </a> <!-- testPostStoreOrder_DD(2, 12, 22, Random, placed, true) -->
+                  <span class="method-name">testPostStoreOrder_DD</span>
+                  <span class="parameters">(2,12,22,Random,placed,true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPostStoreOrder_DD(6, 16, 26, Random, placed, true)">
+                  </a> <!-- testPostStoreOrder_DD(6, 16, 26, Random, placed, true) -->
+                  <span class="method-name">testPostStoreOrder_DD</span>
+                  <span class="parameters">(6,16,26,Random,placed,true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPostStoreOrder_DD(4, 14, 24, Random, placed, true)">
+                  </a> <!-- testPostStoreOrder_DD(4, 14, 24, Random, placed, true) -->
+                  <span class="method-name">testPostStoreOrder_DD</span>
+                  <span class="parameters">(4,14,24,Random,placed,true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">petstore.testcases.Usertests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -141,18 +395,67 @@
                   <span class="method-name">testCreateUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">petstore.testcases.UserDataDriventests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testGetUserByName">
-                  </a> <!-- testGetUserByName -->
-                  <span class="method-name">testGetUserByName</span>
+                  <a name="testDeleteUserByName(testuser3)">
+                  </a> <!-- testDeleteUserByName(testuser3) -->
+                  <span class="method-name">testDeleteUserByName</span>
+                  <span class="parameters">(testuser3)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testUpdateUserbyName">
-                  </a> <!-- testUpdateUserbyName -->
-                  <span class="method-name">testUpdateUserbyName</span>
+                  <a name="testDeleteUserByName(testuser1)">
+                  </a> <!-- testDeleteUserByName(testuser1) -->
+                  <span class="method-name">testDeleteUserByName</span>
+                  <span class="parameters">(testuser1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPostUser(1030, testuser3, Smith, Steve, c@gmail.com, test@3, 1234567897)">
+                  </a> <!-- testPostUser(1030, testuser3, Smith, Steve, c@gmail.com, test@3, 1234567897) -->
+                  <span class="method-name">testPostUser</span>
+                  <span class="parameters">(1030,testuser3,Smith,Steve,c@gmail.com,test@3,1234567897)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPostUser(1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897)">
+                  </a> <!-- testPostUser(1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897) -->
+                  <span class="method-name">testPostUser</span>
+                  <span class="parameters">(1010,testuser1,John,Canedy,a@gmail.com,test@1,1234567897)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPostUser(1020, testuser2, Kim, Kom, b@gmail.com, test@2, 1234567897)">
+                  </a> <!-- testPostUser(1020, testuser2, Kim, Kom, b@gmail.com, test@2, 1234567897) -->
+                  <span class="method-name">testPostUser</span>
+                  <span class="parameters">(1020,testuser2,Kim,Kom,b@gmail.com,test@2,1234567897)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">petstore.testcases.Storetests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPostStoreOrder">
+                  </a> <!-- testPostStoreOrder -->
+                  <span class="method-name">testPostStoreOrder</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -172,7 +475,11 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;petstore.testcases.Usertests2&quot;/&gt;
+      &lt;class name=&quot;petstore.testcases.UserDataDriventests&quot;/&gt;
+      &lt;class name=&quot;petstore.testcases.StoreDataDriventests&quot;/&gt;
+      &lt;class name=&quot;petstore.testcases.Usertests&quot;/&gt;
+      &lt;class name=&quot;petstore.testcases.Storetests&quot;/&gt;
+      &lt;class name=&quot;petstore.testcases.AuthenticationTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -186,7 +493,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,24 +519,96 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(21);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCreateUser')
-data.setCell(0, 2, 'petstore.testcases.Usertests2')
-data.setCell(0, 3, 5766);
+data.setCell(0, 1, 'testPostUser')
+data.setCell(0, 2, 'petstore.testcases.UserDataDriventests')
+data.setCell(0, 3, 4707);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testUpdateUserbyName')
-data.setCell(1, 2, 'petstore.testcases.Usertests2')
-data.setCell(1, 3, 3030);
+data.setCell(1, 1, 'testPostStoreOrder')
+data.setCell(1, 2, 'petstore.testcases.Storetests')
+data.setCell(1, 3, 3974);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testGetUserByName')
-data.setCell(2, 2, 'petstore.testcases.Usertests2')
-data.setCell(2, 3, 1280);
+data.setCell(2, 1, 'testCreateUser')
+data.setCell(2, 2, 'petstore.testcases.Usertests')
+data.setCell(2, 3, 3620);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testDeleteUserByName')
+data.setCell(3, 2, 'petstore.testcases.UserDataDriventests')
+data.setCell(3, 3, 3567);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testGetStoreOrderByID_DD_Negative')
+data.setCell(4, 2, 'petstore.testcases.StoreDataDriventests')
+data.setCell(4, 3, 2368);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testPostUser')
+data.setCell(5, 2, 'petstore.testcases.UserDataDriventests')
+data.setCell(5, 3, 2050);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testAuthentication')
+data.setCell(6, 2, 'petstore.testcases.AuthenticationTests')
+data.setCell(6, 3, 1807);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testPostStoreOrder_DD')
+data.setCell(7, 2, 'petstore.testcases.StoreDataDriventests')
+data.setCell(7, 3, 1736);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testDeleteUserByName')
+data.setCell(8, 2, 'petstore.testcases.UserDataDriventests')
+data.setCell(8, 3, 1654);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testPostStoreOrder_DD')
+data.setCell(9, 2, 'petstore.testcases.StoreDataDriventests')
+data.setCell(9, 3, 1637);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testPostStoreOrder_DD')
+data.setCell(10, 2, 'petstore.testcases.StoreDataDriventests')
+data.setCell(10, 3, 1598);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testGetStoreOrder')
+data.setCell(11, 2, 'petstore.testcases.Storetests')
+data.setCell(11, 3, 1579);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testPostUser')
+data.setCell(12, 2, 'petstore.testcases.UserDataDriventests')
+data.setCell(12, 3, 1575);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testGetStoreOrderByID_DD_Negative')
+data.setCell(13, 2, 'petstore.testcases.StoreDataDriventests')
+data.setCell(13, 3, 1567);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testDeleteStoreOrderByID_DD')
+data.setCell(14, 2, 'petstore.testcases.StoreDataDriventests')
+data.setCell(14, 3, 1566);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testGetStoreOrderByID_DD_Negative')
+data.setCell(15, 2, 'petstore.testcases.StoreDataDriventests')
+data.setCell(15, 3, 1544);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testDeleteStoreOrderByID_DD')
+data.setCell(16, 2, 'petstore.testcases.StoreDataDriventests')
+data.setCell(16, 3, 1538);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testDeleteStoreOrderByID_DD')
+data.setCell(17, 2, 'petstore.testcases.StoreDataDriventests')
+data.setCell(17, 3, 1537);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testDeleteUserByName')
+data.setCell(18, 2, 'petstore.testcases.UserDataDriventests')
+data.setCell(18, 3, 1530);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testDeleteStoreOrder')
+data.setCell(19, 2, 'petstore.testcases.Storetests')
+data.setCell(19, 3, 1300);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testApiKey')
+data.setCell(20, 2, 'petstore.testcases.AuthenticationTests')
+data.setCell(20, 3, 151);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -255,22 +634,120 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">petstore.testcases.Usertests2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">petstore.testcases.UserDataDriventests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testPostUser(1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPostUser(1020, testuser2, Kim, Kom, b@gmail.com, test@2, 1234567897)</span>
+                <span class="method-start">4723 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPostUser(1030, testuser3, Smith, Steve, c@gmail.com, test@3, 1234567897)</span>
+                <span class="method-start">6298 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteUserByName(testuser1)</span>
+                <span class="method-start">8536 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteUserByName(testuser2)</span>
+                <span class="method-start">10190 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteUserByName(testuser3)</span>
+                <span class="method-start">11737 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">petstore.testcases.StoreDataDriventests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testPostStoreOrder_DD(2, 12, 22, Random, placed, true)</span>
+                <span class="method-start">15759 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPostStoreOrder_DD(4, 14, 24, Random, placed, true)</span>
+                <span class="method-start">17357 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPostStoreOrder_DD(6, 16, 26, Random, placed, true)</span>
+                <span class="method-start">18994 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteStoreOrderByID_DD(2)</span>
+                <span class="method-start">20808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteStoreOrderByID_DD(4)</span>
+                <span class="method-start">22374 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteStoreOrderByID_DD(6)</span>
+                <span class="method-start">23912 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetStoreOrderByID_DD_Negative(2)</span>
+                <span class="method-start">25521 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetStoreOrderByID_DD_Negative(4)</span>
+                <span class="method-start">27889 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetStoreOrderByID_DD_Negative(6)</span>
+                <span class="method-start">29456 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">petstore.testcases.Usertests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">31001 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testCreateUser</span>
-                <span class="method-start">840 ms</span>
+                <span class="method-start">31215 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">petstore.testcases.Storetests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">34837 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testPostStoreOrder</span>
+                <span class="method-start">34845 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testGetUserByName</span>
-                <span class="method-start">6620 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetStoreOrder</span>
+                <span class="method-start">38819 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testUpdateUserbyName</span>
-                <span class="method-start">7912 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteStoreOrder</span>
+                <span class="method-start">40398 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">petstore.testcases.AuthenticationTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">41698 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testAuthentication</span>
+                <span class="method-start">41698 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testApiKey</span>
+                <span class="method-start">43505 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
